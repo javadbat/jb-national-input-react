@@ -1,2 +1,1 @@
-import JBNationalInput from './dist/JBNationalInput.js';
-export default JBNationalInput;
+export {JBNationalInput} from './dist/JBNationalInput.js';

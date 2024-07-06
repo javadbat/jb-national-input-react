@@ -9,9 +9,9 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
     interface IntrinsicElements {
-      'jb-national-input': JBSearchbarType;
+      'jb-national-input': JBNationalInputType;
     }
-    interface JBSearchbarType extends React.DetailedHTMLProps<React.HTMLAttributes<JBNationalInputWebComponent>, JBNationalInputWebComponent> {
+    interface JBNationalInputType extends React.DetailedHTMLProps<React.HTMLAttributes<JBNationalInputWebComponent>, JBNationalInputWebComponent> {
       "class"?: string,
       "type"?: string,
       "label"?:string,
@@ -133,5 +133,5 @@ JBNationalInput.propTypes = {
   message: PropTypes.string,
   inputType: PropTypes.string
 };
-JBNationalInput.displayName = "JBPaymentInput";
-export default JBNationalInput;
+JBNationalInput.displayName = "JBNationalInput";
+export {JBNationalInput};
