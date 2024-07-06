@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
 import PropTypes from 'prop-types';
 import 'jb-national-input';
+// eslint-disable-next-line no-duplicate-imports
+import {JBNationalInputWebComponent} from 'jb-national-input';
 import { useEvent } from '../../../common/hooks/use-event';
 
-//TODO: replace it after you migrate web-component to typescript
-type JBNationalInputWebComponent = any;
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
@@ -80,7 +80,7 @@ const JBNationalInput = React.forwardRef((props:any, ref) => {
     element.current.value = value;
   }, [props.value]);
   useEffect(() => {
-    element.current.validationList = props.validationList || [];
+    element.current.validation.list = props.validationList || [];
   }, [props.validationList]);
   useEffect(() => {
     element.current.setAttribute('direction', props.direction);
