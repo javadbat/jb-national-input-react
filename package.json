@@ -32,6 +32,7 @@
 		"url": "git@github.com:javadbat/jb-national-input-react.git"
   },
   "dependencies": {
-    "jb-national-input": ">=1.0.0"
+    "jb-national-input": ">=2.0.0",
+    "jb-input-react":">=3.1.0"
   }
 }

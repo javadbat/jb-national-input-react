@@ -2,9 +2,7 @@ import React, { useRef, useEffect, useState, useImperativeHandle } from 'react';
 import 'jb-national-input';
 // eslint-disable-next-line no-duplicate-imports
 import {JBNationalInputWebComponent} from 'jb-national-input';
-import { Props as JBInputProps } from 'jb-input-react';
-import { useJBInputEvents } from 'jb-input-react/lib/events-hook';
-import { useJBInputAttribute } from 'jb-input-react/lib/attributes-hook';
+import { Props as JBInputProps,useJBInputEvents,useJBInputAttribute } from 'jb-input-react';
 
 export type Props = JBInputProps
 interface JBNationalInputType extends React.DetailedHTMLProps<React.HTMLAttributes<JBNationalInputWebComponent>, JBNationalInputWebComponent> {
