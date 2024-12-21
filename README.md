@@ -1,5 +1,8 @@
 # jb-national-input-react
 
+> [!WARNING]  
+> this package is deprecated and moved to [jb-number-input/react](https://github.com/javadbat/jb-number-input/tree/main/react)
+
 react component wrapper for [jb-national-input](https://github.com/javadbat/jb-national-input)
 superset component on [jb-input-react](https://github.com/javadbat/jb-input-react) , just for national number input with extra filter and ready to use validator.
 
